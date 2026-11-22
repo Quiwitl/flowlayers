@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flowlayers"
+version = "0.1.0"
+description = "Fast probabilistic traversal of connectomes (Schlegel et al. 2021 information-flow layers), on CPU or GPU"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Atlahua Quiahuitl Martínez Obregón" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0"]
+keywords = ["connectome", "connectomics", "drosophila", "flywire", "graph traversal", "information flow", "gpu"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+gpu = ["cupy-cuda12x>=13"]
+test = ["pytest>=7", "navis>=1.10"]
+
+[project.urls]
+Repository = "https://github.com/Quiwitl/flowlayers"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/flowlayers"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

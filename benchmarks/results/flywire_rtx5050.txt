@@ -1,0 +1,30 @@
+<flowlayers.Graph: 138,625 nodes, 15,090,883 edges>  ·  loaded and prepared in 10 s on gpu
+         olfativas:  2,279 seeds ·  2,500 runs ·   42.5 s
+        gustativas:    410 seeds ·  2,600 runs ·   42.3 s
+          johnston:    868 seeds ·  2,500 runs ·   40.6 s
+     cerdas_cabeza:    305 seeds ·  2,600 runs ·   42.2 s
+        cerdas_ojo:  1,112 seeds ·  2,600 runs ·   42.2 s
+         taste_peg:     75 seeds ·  2,500 runs ·   40.6 s
+  termosensoriales:     29 seeds ·  2,600 runs ·   42.2 s
+  higrosensoriales:     74 seeds ·  2,600 runs ·   42.2 s
+ proyeccion_visual:  8,038 seeds ·  2,300 runs ·   37.5 s
+   fotorreceptores: 10,582 seeds ·  2,300 runs ·   37.3 s
+            ocelos:    273 seeds ·  2,800 runs ·   45.4 s
+       ascendentes:  2,231 seeds ·  2,300 runs ·   37.3 s
+             todas: 26,702 seeds ·  1,900 runs ·   30.8 s
+all 13 seed sets: 8.7 min
+Spearman against fly-sensory-layers results/02_capas_completo_p15_u1_gpu.parquet
+         olfativas: rho = 0.9990  (n = 134,417)
+        gustativas: rho = 0.9985  (n = 136,286)
+          johnston: rho = 0.9983  (n = 135,828)
+     cerdas_cabeza: rho = 0.9980  (n = 136,391)
+        cerdas_ojo: rho = 0.9979  (n = 135,584)
+         taste_peg: rho = 0.9977  (n = 136,621)
+  termosensoriales: rho = 0.9991  (n = 136,667)
+  higrosensoriales: rho = 0.9990  (n = 136,622)
+ proyeccion_visual: rho = 0.9993  (n = 128,658)
+   fotorreceptores: rho = 0.9998  (n = 127,923)
+            ocelos: rho = 0.9977  (n = 136,431)
+       ascendentes: rho = 0.9981  (n = 134,558)
+             todas: rho = 0.9989  (n = 111,908)
+olfactory, 1,000 runs: navis ≈ 60 min (3.61 s per run, single process) · flowlayers 16.5 s on gpu (×219)
